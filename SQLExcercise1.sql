@@ -79,3 +79,15 @@ from album
 left join Artist on ArtistId = Artist.Id
 group by Artist.ArtistName
 having count(label) > 1;
+
+select 
+max(Album.Title) as albumTitle,
+max(Album.AlbumLength) as LongestAlbum
+from Album
+
+select 
+max(Song.SongLength) as SongDuration,
+max(Song.Title) as SongTitle,
+max(Album.Title) as AlbumTitle
+from Song
+left join Album on AlbumId = Album.Id
