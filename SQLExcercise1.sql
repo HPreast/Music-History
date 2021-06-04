@@ -34,13 +34,13 @@ where song.AlbumId is null
 order by album.title;
 
 --Using the INSERT statement, add one of your favorite artists to the Artist table.
---Insert into Artist (ArtistName, YearEstablished) Values ('Highly Suspect', 2009);
+Insert into Artist (ArtistName, YearEstablished) Values ('Highly Suspect', 2009);
 
 --Using the INSERT statement, add one, or more, albums by your artist to the Album table.
---Insert into Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId) values ('Mister Asylum', 2015, 39.58, 'Atlantic', 29, 2); 
+Insert into Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId) values ('Mister Asylum', 2015, 39.58, 'Atlantic', 29, 2); 
 
 --Using the INSERT statement, add some songs that are on that album to the Song table.
---Insert into Song (Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId) values ('Mister Asylum', 243, '7/17/2015', 2, 29, 23);
+Insert into Song (Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId) values ('Mister Asylum', 243, '7/17/2015', 2, 29, 23);
 
 
 SELECT a.Title AlbumTitle, s.Title SongTitle 
